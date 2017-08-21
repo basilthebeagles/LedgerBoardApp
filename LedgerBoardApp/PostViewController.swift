@@ -12,11 +12,14 @@
 
 import UIKit
 
+
 class PostViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
     @IBOutlet var tableView: UITableView!
     let cellReuseIdentifier = "cell"
-
+    
+    var postHash: String?
+    var model: PostViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,8 +33,7 @@ class PostViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.dataSource = self
         tableView.tableFooterView = UIView()
         tableView.alwaysBounceVertical = false
-
-
+        self.model = PostViewModel.init(postHash: postHash!, loadingViewController: self)
     
     }
     
@@ -60,6 +62,9 @@ class PostViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             
             cell = tableView.dequeueReusableCell(withIdentifier: "hash", for: indexPath)
+            
+            cell.detailTextLabel = model.
+            
         }else if indexPath.row == 1{
             cell = tableView.dequeueReusableCell(withIdentifier: "broadcaster", for: indexPath)
         }else if indexPath.row == 2{
@@ -88,6 +93,8 @@ class PostViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         return nil
     }
+    
+    
     
 }
 

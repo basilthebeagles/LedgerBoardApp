@@ -13,7 +13,7 @@ class ViewViewController: UIViewController, UISearchBarDelegate {
     
     @IBOutlet weak var searchBar: UISearchBar!
     
-    
+    var searchContent: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,14 +33,16 @@ class ViewViewController: UIViewController, UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar){
         
         if let content = searchBar.text{
+            searchContent = content
+
             if content.characters.count == 64{
-                performSegue(withIdentifier: "searchToPost", sender: content)
+                performSegue(withIdentifier: "searchToPost", sender: self)
             
 
             }else if content.characters.count == 128{
-                performSegue(withIdentifier: "searchToBroadcasterPost", sender: content)
+                performSegue(withIdentifier: "searchToBroadcasterPost", sender: self)
             }else{
-                performSegue(withIdentifier: "searchToBlock", sender: content)
+                performSegue(withIdentifier: "searchToBlock", sender: self)
             }
             
             
@@ -67,7 +69,19 @@ class ViewViewController: UIViewController, UISearchBarDelegate {
     
     
     
-    
+     func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        
+
+        
+        if segue.identifier! == "searchToPost"{
+            let destinationView = segue.destination as! PostViewController
+            destinationView.postHash = searchContent!
+        }
+        
+        
+        
+    }
+
     
 
 
