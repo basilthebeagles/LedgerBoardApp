@@ -83,6 +83,15 @@
                                 <rect key="frame" x="112" y="332" width="150" height="2"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </progressView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="za0-oD-Ggb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Loading..." id="2wy-th-ehG">
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="iI7-Gr-CTy"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.050969488918781281" green="0.050986640155315399" blue="0.050968408584594727" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -264,6 +273,9 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="PDB-RK-e8P" id="zpw-WJ-bP3"/>
+                        <segue destination="3Xv-2O-3Jo" kind="popoverPresentation" identifier="postToLoad" popoverAnchorView="5Wh-UK-hkp" id="k8c-Y5-d1U">
+                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                        </segue>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Svt-Dh-99h" userLabel="First Responder" sceneMemberID="firstResponder"/>

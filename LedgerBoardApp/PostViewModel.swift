@@ -8,26 +8,26 @@
 
 import Foundation
 import UIKit
-import SwiftHTTP
+import Just
+import SwiftyJSON
+
 
 class PostViewModel{
     
-    let postHash: String
     
-    let postBroadcaster: String
     
-    let postTime: String
+    var postObject: postDataObject?
     
-    let postConfirmations: String
+    var loadingViewController: UIViewController
     
-    let postBlockIndex: String
     
     
     init(postHash: String, loadingViewController: UIViewController){
+        postObject = nil
+        self.loadingViewController = loadingViewController
+        mainLogic(postHash: postHash)
         
-        self.postHash = postHash
-        getData()
-        
+
     }
     
     
@@ -36,22 +36,56 @@ class PostViewModel{
     }
     
     
-    private func getData(){
-        let params = ["attribute": "Post", "attributeParameter": self.postHash]
+    private func mainLogic(postHash: String){
+        let queue = DispatchQueue(label: "createPostObject")
         
-        do {
-            let opt = try HTTP.POST("http://ledgerboard.f-stack.com:4848", parameters: params) //make the domain not hardcoded
-            opt.start { response in
-                //do things...
-                print(response.text ?? "No data recieved")
-                
+        
+        queue.async {
+            var feedback = self.getJson(postHash: postHash)
+            
+            if feedback[0] as! String != ""{
+                queue.suspend()
+            }
+            
+            
+            
+            DispatchQueue.main.async {
+                // update prog bar
                 
             }
-        } catch let error {
-            print("got an error creating the request: \(error)")
+            
+            var JSONData = feedback[1] as! JSON
+            
+            self.postObject = postDataObject(postHash: postHash, postBroadcaster: JSONData["publicKey"] as! String, postTime: JSONData["timeStamp"] as! Int, postBlockIndex: JSONData["blockIndex"] as! Int, postContent: JSONData["content"] as! String, postSignature: JSONData["signature"] as! String, currentHeight: JSONData["currentHeight"] as! Int)
+            
         }
-    
+        
+
+        
     }
+    
+    
+    
+    private func getJson(postHash: String) -> [Any] {
+        let params = ["attribute": "Post", "attributeParameter": postHash]
+        
+        var data = Just.post("myip", data: params).content
+        
+        
+        
+        do{
+        let json = try JSON(data: data!)
+        return ["", json]
+        }catch{
+            print("error")
+        }
+        
+        return ["error", ""]
+    }
+    
+    
+    
+    
 }
 
 

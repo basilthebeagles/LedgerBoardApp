@@ -33,8 +33,9 @@ class PostViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.dataSource = self
         tableView.tableFooterView = UIView()
         tableView.alwaysBounceVertical = false
-        self.model = PostViewModel.init(postHash: postHash!, loadingViewController: self)
-    
+        
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -44,9 +45,16 @@ class PostViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     
     
+    
+    
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }
+    
+    
+    
     
     // create a cell for each table view row
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -63,7 +71,7 @@ class PostViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             cell = tableView.dequeueReusableCell(withIdentifier: "hash", for: indexPath)
             
-            cell.detailTextLabel = model.
+            
             
         }else if indexPath.row == 1{
             cell = tableView.dequeueReusableCell(withIdentifier: "broadcaster", for: indexPath)
@@ -79,21 +87,30 @@ class PostViewController: UIViewController, UITableViewDelegate, UITableViewData
         }else{
             
         cell = tableView.dequeueReusableCell(withIdentifier: "block", for: indexPath)
+            
+            
         }
-        
-        
         return cell
     }
     
-    // method to run when table view cell is tapped
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("You tapped cell number \(indexPath.row).")
-    }
-    
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        return nil
-    }
-    
+        
+        
+        func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+            
+            
+            
+            if segue.identifier! == "postToLoad"{
+                
+                let destinationView = segue.destination as! PostViewController
+                
+                self.model = PostViewModel.init(postHash: postHash!, loadingViewController: destinationView)
+
+            }
+            
+            
+            
+        }
+
     
     
 }
