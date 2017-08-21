@@ -8,22 +8,84 @@
 
 /* Begin PBXBuildFile section */
 		51525B321F1FA0E9007BD834 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51525B311F1FA0E9007BD834 /* AppDelegate.swift */; };
-		51525B341F1FA0E9007BD834 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51525B331F1FA0E9007BD834 /* FirstViewController.swift */; };
-		51525B361F1FA0E9007BD834 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51525B351F1FA0E9007BD834 /* SecondViewController.swift */; };
 		51525B391F1FA0E9007BD834 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51525B371F1FA0E9007BD834 /* Main.storyboard */; };
 		51525B3B1F1FA0E9007BD834 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51525B3A1F1FA0E9007BD834 /* Assets.xcassets */; };
 		51525B3E1F1FA0E9007BD834 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51525B3C1F1FA0E9007BD834 /* LaunchScreen.storyboard */; };
+		516CE3321F4A231C008BDD9B /* ViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516CE3311F4A231C008BDD9B /* ViewViewController.swift */; };
+		516CE3361F4A380B008BDD9B /* BroadcasterPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516CE3351F4A380B008BDD9B /* BroadcasterPostViewController.swift */; };
+		516CE3381F4A381A008BDD9B /* BlockPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516CE3371F4A381A008BDD9B /* BlockPostViewController.swift */; };
+		516CE33A1F4A43C3008BDD9B /* BlockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516CE3391F4A43C3008BDD9B /* BlockViewController.swift */; };
+		516CE33C1F4A4BD3008BDD9B /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516CE33B1F4A4BD3008BDD9B /* PostViewController.swift */; };
+		516CE33E1F4A53B7008BDD9B /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516CE33D1F4A53B7008BDD9B /* PostViewModel.swift */; };
+		516CE3721F4A59A3008BDD9B /* SwiftHTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 516CE3651F4A597D008BDD9B /* SwiftHTTP.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		516CE3641F4A597D008BDD9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 516CE35A1F4A597C008BDD9B /* SwiftHTTP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6BFD901619C8D8B500DD99B6;
+			remoteInfo = SwiftHTTP;
+		};
+		516CE3661F4A597D008BDD9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 516CE35A1F4A597C008BDD9B /* SwiftHTTP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6BFD902119C8D8B500DD99B6;
+			remoteInfo = SwiftHTTPTests;
+		};
+		516CE3681F4A597D008BDD9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 516CE35A1F4A597C008BDD9B /* SwiftHTTP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D958025919E6EEEB003C8218;
+			remoteInfo = SwiftHTTPOSX;
+		};
+		516CE36A1F4A597D008BDD9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 516CE35A1F4A597C008BDD9B /* SwiftHTTP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D958026319E6EEEB003C8218;
+			remoteInfo = SwiftHTTPOSXTests;
+		};
+		516CE36C1F4A597D008BDD9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 516CE35A1F4A597C008BDD9B /* SwiftHTTP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5C135EC11C4733CD00AA3A01;
+			remoteInfo = SwiftHTTPtvOS;
+		};
+		516CE36E1F4A597D008BDD9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 516CE35A1F4A597C008BDD9B /* SwiftHTTP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5C135ECA1C4733CE00AA3A01;
+			remoteInfo = SwiftHTTPtvOSTests;
+		};
+		516CE3701F4A597D008BDD9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 516CE35A1F4A597C008BDD9B /* SwiftHTTP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5C135FA91C4737E200AA3A01;
+			remoteInfo = SwiftHTTPWatchOS;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		51525B2E1F1FA0E9007BD834 /* LedgerBoardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LedgerBoardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51525B311F1FA0E9007BD834 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		51525B331F1FA0E9007BD834 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		51525B351F1FA0E9007BD834 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		51525B381F1FA0E9007BD834 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		51525B3A1F1FA0E9007BD834 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51525B3D1F1FA0E9007BD834 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51525B3F1F1FA0E9007BD834 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		516CE3311F4A231C008BDD9B /* ViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewViewController.swift; sourceTree = "<group>"; };
+		516CE3351F4A380B008BDD9B /* BroadcasterPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BroadcasterPostViewController.swift; sourceTree = "<group>"; };
+		516CE3371F4A381A008BDD9B /* BlockPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockPostViewController.swift; sourceTree = "<group>"; };
+		516CE3391F4A43C3008BDD9B /* BlockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockViewController.swift; sourceTree = "<group>"; };
+		516CE33B1F4A4BD3008BDD9B /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		516CE33D1F4A53B7008BDD9B /* PostViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		516CE35A1F4A597C008BDD9B /* SwiftHTTP.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftHTTP.xcodeproj; path = "LedgerBoardApp/Libraries/SwiftHTTP-master/SwiftHTTP.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				516CE3721F4A59A3008BDD9B /* SwiftHTTP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +103,7 @@
 		51525B251F1FA0E9007BD834 = {
 			isa = PBXGroup;
 			children = (
+				516CE35A1F4A597C008BDD9B /* SwiftHTTP.xcodeproj */,
 				51525B301F1FA0E9007BD834 /* LedgerBoardApp */,
 				51525B2F1F1FA0E9007BD834 /* Products */,
 			);
@@ -56,15 +120,41 @@
 		51525B301F1FA0E9007BD834 /* LedgerBoardApp */ = {
 			isa = PBXGroup;
 			children = (
+				516CE33F1F4A53C0008BDD9B /* Model */,
+				516CE33B1F4A4BD3008BDD9B /* PostViewController.swift */,
 				51525B311F1FA0E9007BD834 /* AppDelegate.swift */,
-				51525B331F1FA0E9007BD834 /* FirstViewController.swift */,
-				51525B351F1FA0E9007BD834 /* SecondViewController.swift */,
+				516CE3311F4A231C008BDD9B /* ViewViewController.swift */,
+				516CE3351F4A380B008BDD9B /* BroadcasterPostViewController.swift */,
+				516CE3371F4A381A008BDD9B /* BlockPostViewController.swift */,
+				516CE3391F4A43C3008BDD9B /* BlockViewController.swift */,
 				51525B371F1FA0E9007BD834 /* Main.storyboard */,
 				51525B3A1F1FA0E9007BD834 /* Assets.xcassets */,
 				51525B3C1F1FA0E9007BD834 /* LaunchScreen.storyboard */,
 				51525B3F1F1FA0E9007BD834 /* Info.plist */,
 			);
 			path = LedgerBoardApp;
+			sourceTree = "<group>";
+		};
+		516CE33F1F4A53C0008BDD9B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				516CE33D1F4A53B7008BDD9B /* PostViewModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		516CE35B1F4A597C008BDD9B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				516CE3651F4A597D008BDD9B /* SwiftHTTP.framework */,
+				516CE3671F4A597D008BDD9B /* SwiftHTTPTests.xctest */,
+				516CE3691F4A597D008BDD9B /* SwiftHTTP.framework */,
+				516CE36B1F4A597D008BDD9B /* SwiftHTTPOSXTests.xctest */,
+				516CE36D1F4A597D008BDD9B /* SwiftHTTP.framework */,
+				516CE36F1F4A597D008BDD9B /* SwiftHTTPtvOSTests.xctest */,
+				516CE3711F4A597D008BDD9B /* SwiftHTTP.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -115,12 +205,70 @@
 			mainGroup = 51525B251F1FA0E9007BD834;
 			productRefGroup = 51525B2F1F1FA0E9007BD834 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 516CE35B1F4A597C008BDD9B /* Products */;
+					ProjectRef = 516CE35A1F4A597C008BDD9B /* SwiftHTTP.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				51525B2D1F1FA0E9007BD834 /* LedgerBoardApp */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		516CE3651F4A597D008BDD9B /* SwiftHTTP.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftHTTP.framework;
+			remoteRef = 516CE3641F4A597D008BDD9B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		516CE3671F4A597D008BDD9B /* SwiftHTTPTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftHTTPTests.xctest;
+			remoteRef = 516CE3661F4A597D008BDD9B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		516CE3691F4A597D008BDD9B /* SwiftHTTP.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftHTTP.framework;
+			remoteRef = 516CE3681F4A597D008BDD9B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		516CE36B1F4A597D008BDD9B /* SwiftHTTPOSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftHTTPOSXTests.xctest;
+			remoteRef = 516CE36A1F4A597D008BDD9B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		516CE36D1F4A597D008BDD9B /* SwiftHTTP.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftHTTP.framework;
+			remoteRef = 516CE36C1F4A597D008BDD9B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		516CE36F1F4A597D008BDD9B /* SwiftHTTPtvOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftHTTPtvOSTests.xctest;
+			remoteRef = 516CE36E1F4A597D008BDD9B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		516CE3711F4A597D008BDD9B /* SwiftHTTP.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftHTTP.framework;
+			remoteRef = 516CE3701F4A597D008BDD9B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		51525B2C1F1FA0E9007BD834 /* Resources */ = {
@@ -140,9 +288,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51525B361F1FA0E9007BD834 /* SecondViewController.swift in Sources */,
+				516CE33C1F4A4BD3008BDD9B /* PostViewController.swift in Sources */,
+				516CE33E1F4A53B7008BDD9B /* PostViewModel.swift in Sources */,
+				516CE3321F4A231C008BDD9B /* ViewViewController.swift in Sources */,
+				516CE3361F4A380B008BDD9B /* BroadcasterPostViewController.swift in Sources */,
+				516CE3381F4A381A008BDD9B /* BlockPostViewController.swift in Sources */,
+				516CE33A1F4A43C3008BDD9B /* BlockViewController.swift in Sources */,
 				51525B321F1FA0E9007BD834 /* AppDelegate.swift in Sources */,
-				51525B341F1FA0E9007BD834 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,11 +418,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 49LLUV7BVY;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				INFOPLIST_FILE = LedgerBoardApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.F-Stack.LedgerBoardApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -279,11 +434,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 49LLUV7BVY;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				INFOPLIST_FILE = LedgerBoardApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.F-Stack.LedgerBoardApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -306,6 +464,7 @@
 				51525B441F1FA0E9007BD834 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

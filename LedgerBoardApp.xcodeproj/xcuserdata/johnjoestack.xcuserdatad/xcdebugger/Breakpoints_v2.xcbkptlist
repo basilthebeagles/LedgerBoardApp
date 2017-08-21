@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LedgerBoardApp/PostViewController.swift"
+            timestampString = "524962093.288467"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "PostViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LedgerBoardApp.PostViewController.__deallocating_deinit"
+                  moduleName = "LedgerBoardApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/johnjoestack/Documents/Development/Apps/LedgerBoardApp/LedgerBoardApp/PostViewController.swift"
+                  timestampString = "524962094.006093"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LedgerBoardApp.PostViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; LedgerBoardApp.PostViewController"
+                  moduleName = "LedgerBoardApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/johnjoestack/Documents/Development/Apps/LedgerBoardApp/LedgerBoardApp/PostViewController.swift"
+                  timestampString = "524962094.008796"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LedgerBoardApp.PostViewController.__allocating_init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; LedgerBoardApp.PostViewController"
+                  moduleName = "LedgerBoardApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/johnjoestack/Documents/Development/Apps/LedgerBoardApp/LedgerBoardApp/PostViewController.swift"
+                  timestampString = "524962094.011049"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LedgerBoardApp.PostViewController.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;LedgerBoardApp.PostViewController&gt;"
+                  moduleName = "LedgerBoardApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/johnjoestack/Documents/Development/Apps/LedgerBoardApp/LedgerBoardApp/PostViewController.swift"
+                  timestampString = "524962094.012785"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LedgerBoardApp.PostViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;LedgerBoardApp.PostViewController&gt;"
+                  moduleName = "LedgerBoardApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/johnjoestack/Documents/Development/Apps/LedgerBoardApp/LedgerBoardApp/PostViewController.swift"
+                  timestampString = "524962094.014319"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "124">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LedgerBoardApp/PostViewModel.swift"
+            timestampString = "524966463.851175"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
